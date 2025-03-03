@@ -27,16 +27,21 @@ document.addEventListener("mouseup", () => {
   let selectedText = window.getSelection().toString().trim();
   if (selectedText) {
     document.addEventListener("keydown", handleKeyPress);
+    document.addEventListener("mousedown", removeMouseUpListener);
   }
 
   function handleKeyPress(event) {
-    if (event.key === ".") {
+    if (event.key === "¬") {
       document.removeEventListener("keydown", handleKeyPress);
       chrome.runtime.sendMessage({
         action: "lookupWord",
         word: selectedText,
       });
     }
+  }
+
+  function removeMouseUpListener() {
+    document.removeEventListener("keydown", handleKeyPress);
   }
 });
 
