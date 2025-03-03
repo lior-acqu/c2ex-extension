@@ -23,6 +23,7 @@ popup.appendChild(popupContent);
 document.body.appendChild(popup);
 
 document.addEventListener("mouseup", () => {
+  document.removeEventListener("keydown", handleKeyPress);
   let selectedText = window.getSelection().toString().trim();
   if (selectedText) {
     document.addEventListener("keydown", handleKeyPress);
