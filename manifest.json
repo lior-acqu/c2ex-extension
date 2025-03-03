@@ -1,0 +1,37 @@
+{
+    "name": "C2EX",
+    "version": "1.0.1",
+    "description": "C2EX is a tool that I use to prepare myself for my C2 exam. When you see a word you would like to know the definition of, you can mark it and press / to make the magic happen :)",
+    "permissions": ["storage", "tabs","downloads"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "assets/bookmark.png",
+          "assets/play.png",
+          "assets/delete.png",
+          "assets/save.png"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/C2EX.png",
+        "24": "assets/C2EX.png",
+        "32": "assets/C2EX.png"
+      },
+      "default_title": "C2EX",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+}

@@ -1,0 +1,25 @@
+body {
+  padding: 30px;
+  border: 1px solid #e7e7e7;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+}
+img {
+  height: 80px;
+  width: auto;
+  margin-bottom: 20px;
+}
+button {
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  border: none;
+}
