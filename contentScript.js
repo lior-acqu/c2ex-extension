@@ -60,6 +60,7 @@ chrome.runtime.onMessage.addListener((message, event) => {
     word.style.fontStyle = "italic";
     word.style.fontWeight = "500";
     word.style.marginBottom = "10px";
+    word.style.color = "black";
     popupContent.appendChild(word);
 
     // make some buttons to save or close
@@ -94,6 +95,7 @@ chrome.runtime.onMessage.addListener((message, event) => {
         type.style.fontSize = "18px";
         type.style.fontStyle = "italic";
         type.style.marginBottom = "5px";
+        type.style.color = "black";
         type.appendChild(typeText);
         popupContent.appendChild(type);
 
@@ -102,6 +104,7 @@ chrome.runtime.onMessage.addListener((message, event) => {
         definitionBox.style.fontFamily = "'Times New Roman', serif";
         definitionBox.style.fontSize = "16px";
         definitionBox.style.marginBottom = "10px";
+        definitionBox.style.color = "black";
         popupContent.appendChild(definitionBox);
         let definitionsArray = [];
         for (
@@ -169,6 +172,7 @@ chrome.runtime.onMessage.addListener((message, event) => {
     textBox.style.fontStyle = "italic";
     textBox.style.fontWeight = "500";
     textBox.style.marginBottom = "10px";
+    textBox.style.color = "black";
     popupContent.appendChild(textBox);
 
     // make some buttons to save or close

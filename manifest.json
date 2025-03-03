@@ -1,7 +1,7 @@
 {
     "name": "C2EX",
     "version": "1.0.1",
-    "description": "C2EX is a tool that I use to prepare myself for my C2 exam. When you see a word you would like to know the definition of, you can mark it and press / to make the magic happen :)",
+    "description": "C2EX is a tool that I use to prepare myself for my C2 exam. When you see a word you would like to know the definition of, you can mark it and press ¬ to make the magic happen :)",
     "permissions": ["storage", "tabs","downloads"],
     "host_permissions": ["<all_urls>"],
     "background": {
